@@ -1,8 +1,10 @@
 #include <iostream>
+#include "PlayOption.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "Welcome!";
+	PlayOption playOption;
+	playOption.MainMenu();
 }

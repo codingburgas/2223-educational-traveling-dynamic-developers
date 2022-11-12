@@ -13,7 +13,7 @@ void PlayOption::MainMenu()
 	cout << "3. Exit\n";
 
 
-	cout << "User Input: ";
+	cout << "\nUser Input: ";
 	cin >> playerChoice;
 	if (playerChoice == 1)
 	{
@@ -33,6 +33,8 @@ void PlayOption::MainMenu()
 void PlayOption::Play()
 {
 	cout << "You chose to play!\n";
+	cout << "Good Luck!";
+
 }
 
 void PlayOption::Help()
@@ -43,7 +45,7 @@ void PlayOption::Help()
 void PlayOption::Exit()
 {
 	cout << "\nAre you sure you want to exit?\n";
-	cout << "Type n to continue || y to exit\n";
+	cout << "Type n to cancel || y to exit\n";
 	
 	cin >> finalChoice; //Variable is in PlayOption.h
 

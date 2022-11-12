@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Dynamic Developers.cpp" />
     <ClCompile Include="PlayOption.cpp" />
+    <ClCompile Include="RunGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayOption.h" />

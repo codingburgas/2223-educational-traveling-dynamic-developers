@@ -21,6 +21,9 @@
     <ClCompile Include="PlayOption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RunGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayOption.h">

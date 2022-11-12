@@ -42,7 +42,7 @@ void PlayOption::Help()
 
 void PlayOption::Exit()
 {
-	cout << "Are you sure you want to exit?\n";
+	cout << "\nAre you sure you want to exit?\n";
 	cout << "Type n to continue || y to exit\n";
 	
 	cin >> finalChoice; //Variable is in PlayOption.h
@@ -50,16 +50,15 @@ void PlayOption::Exit()
 	switch (finalChoice)
 	{
 	case 'y':
-		cout << "Ok, program closing.....";
+		cout << "Ok, program closing....";
 		
-		Sleep(3800);
+		Sleep(2800);
 		exit(0);
 
-		break;
 	case 'n':
 		cout << "You want to continue? Sure thing....back to main menu";
-		system("cls");
 		
+		system("cls");
 		MainMenu();
 
 		break;
@@ -73,15 +72,14 @@ void PlayOption::Exit()
 
 			if (finalChoice == 'y')
 			{
-				cout << "Finally, you made a decision!\nHave a nice day!  Program closing.....";
-				Sleep(3800);
+				cout << "Finally, you made a decision!\nHave a nice day! Program closing....";
+				Sleep(2800);
 				exit(0);
-				break;
 			}
 			else if(finalChoice == 'n')
 			{
 				cout << "Oh, so you don't want to quit? Oh well, back to menu....";
-				Sleep(3800);
+				Sleep(3200);
 				system("cls");
 				MainMenu();
 				break;
@@ -91,6 +89,7 @@ void PlayOption::Exit()
 				issueCounter++;
 				cout << "Try again!\n";
 				cout << "You've tried: " << issueCounter << " times so far!\n";
+				
 			}
 		} while (true);
 

@@ -9,3 +9,5 @@ using namespace std;
 		void Help();
 		void Exit();
 		void MainStory();
+		void gameSetup();
+		void gameStart();

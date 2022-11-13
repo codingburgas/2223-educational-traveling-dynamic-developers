@@ -36,7 +36,7 @@ void Play()
 {
 	cout << "You chose to play!\n";
 	cout << "Good Luck!";
-	MainStory();
+	gameSetup();
 }
 
 void Help()

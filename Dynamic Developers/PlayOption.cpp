@@ -1,12 +1,12 @@
 #include "PlayOption.h"
-#include "RunGame.cpp"
 
 
 using namespace std;
 
 
-void PlayOption::MainMenu()
+void MainMenu()
 {
+
 	int playerChoice;
 
 	cout << "Welcome to Euro Traveller - The Mini Game!\n\n\n";
@@ -32,24 +32,25 @@ void PlayOption::MainMenu()
 }
 
 
-void PlayOption::Play()
+void Play()
 {
 	cout << "You chose to play!\n";
 	cout << "Good Luck!";
 	MainStory();
 }
 
-void PlayOption::Help()
+void Help()
 {
 	cout << "You chose the help section!\n";
 }
 
-void PlayOption::Exit()
+void Exit()
 {
+	char finalChoice;
 	cout << "\nAre you sure you want to exit?\n";
 	cout << "Type n to cancel || y to exit\n";
 	
-	cin >> finalChoice; //Variable is in PlayOption.h
+	cin >> finalChoice; 
 
 	switch (finalChoice)
 	{

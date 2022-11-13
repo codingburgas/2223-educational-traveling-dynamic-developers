@@ -2,13 +2,10 @@
 #include <iostream>
 #include <Windows.h>
 
-class PlayOption 
-{	
-	char finalChoice;
-
-	public :
+using namespace std;
+		
 		void MainMenu();
 		void Play();
 		void Help();
 		void Exit();
-};
+		void MainStory();

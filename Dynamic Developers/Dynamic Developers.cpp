@@ -5,6 +5,6 @@ using namespace std;
 
 int main()
 {
-	PlayOption playOption;
-	playOption.MainMenu();
+
+	MainMenu();
 }

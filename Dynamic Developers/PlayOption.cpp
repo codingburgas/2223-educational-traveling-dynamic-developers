@@ -34,8 +34,10 @@ void MainMenu()
 
 void Play()
 {
-	cout << "You chose to play!\n";
-	cout << "Good Luck!";
+	cout << "\nYou chose to play!\n";
+	cout << "Good Luck!\nGame loading....";
+	Sleep(3200);
+	system("cls");
 	gameSetup();
 }
 

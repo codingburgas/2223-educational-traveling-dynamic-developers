@@ -1,4 +1,6 @@
 #include "PlayOption.h"
+#include "RunGame.cpp"
+
 
 using namespace std;
 
@@ -34,7 +36,7 @@ void PlayOption::Play()
 {
 	cout << "You chose to play!\n";
 	cout << "Good Luck!";
-
+	MainStory();
 }
 
 void PlayOption::Help()
@@ -91,7 +93,6 @@ void PlayOption::Exit()
 				issueCounter++;
 				cout << "Try again!\n";
 				cout << "You've tried: " << issueCounter << " times so far!\n";
-				
 			}
 		} while (true);
 

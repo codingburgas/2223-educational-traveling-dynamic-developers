@@ -7,7 +7,7 @@ using namespace std;
 void MainMenu()
 {
 
-	int playerChoice;
+	string playerChoice;
 
 incorrect:
 
@@ -18,17 +18,16 @@ incorrect:
 
 
 	cout << "\nUser Input: ";
-
 	cin >> playerChoice;
-	if (playerChoice == 1)
+	if (playerChoice == "1")
 	{
 		Play();
 	}
-	else if (playerChoice == 2)
+	else if (playerChoice == "2")
 	{
 		Help();
 	}
-	else if (playerChoice == 3)
+	else if (playerChoice == "3")
 	{
 		Exit();
 	}
@@ -55,7 +54,7 @@ void Help()
 {
 	system("cls");
 	char playerChoiceHelpSection;
-
+incorrectInputHelp:
 	cout << "You chose the help section!\n";
 	cout << "During gameplay you can use this command (some may be added in the future and may be added here aswell)! :D\n\n";
 	cout << "Here's the command list:\n";
@@ -77,8 +76,9 @@ void Help()
 		system("cls");
 		MainMenu();
 		break;
-	case '2':
+	case'2':
 		char confirmChoice;
+		
 		cout << "You want to quit already?\n\n";
 		cout << "Type n to cancel || y to exit game\n";
 		
@@ -105,9 +105,10 @@ void Help()
 
 		break;
 	default:
-		/// <summary>
-		// NEED TO BE FIXED
-		/// </summary>
+		cout << "Incorrect Input! "  << "Please try again!\n";
+		system("pause");
+		system("cls");
+		goto incorrectInputHelp;
 		break;
 	}
 }

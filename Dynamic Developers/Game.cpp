@@ -18,7 +18,7 @@ void inputPassport()
 	cin >> Player.name;
 	cout << "Surname: ";
 	cin >> Player.surname;
-	cout << "age: ";
+	cout << "Age: ";
 	cin >> Player.age;
 	cout << "Country: ";
 	cin >> Player.country;
@@ -28,12 +28,11 @@ void inputPassport()
 }
 void showPassport()
 {
-
 	cout << "Name: ";
 	cout << Player.name << endl;
 	cout << "Surname: ";
 	cout << Player.surname << endl;
-	cout << "age: ";
+	cout << "Age: ";
 	cout << Player.age << endl;
 	cout << "Country: ";
 	cout << Player.country << endl;

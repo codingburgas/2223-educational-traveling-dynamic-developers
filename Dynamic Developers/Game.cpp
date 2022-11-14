@@ -1,7 +1,6 @@
-#include <iostream>
+#include "Precompile.h"
 #include "PlayOption.h"
 
-using namespace std;
 struct passport
 {
 	string name;
@@ -11,6 +10,7 @@ struct passport
 	string city;
 	string countriesVisited[50];
 }Player;
+
 void inputPassport()
 {
 	cout << "Please make your passport \n";
@@ -26,6 +26,7 @@ void inputPassport()
 	cin >> Player.city;
 
 }
+
 void showPassport()
 {
 	cout << "Name: ";
@@ -39,26 +40,28 @@ void showPassport()
 	cout << "City: ";
 	cout << Player.city << endl;
 }
+
 void MainStory()
 {
-	cout << "Well, here you are, " << Player.name << "! We've been waiting for you!\n";
-	cout << "Your job is to travel across 5 countries in Europe and explore the awesome world outside your own country.\n";
-	cout << "First things first, you must choose your starting country!\n\n";
-	
 	char countryChoice; unsigned short int mistakeCounter = 0; string countryList[3] = {"Bulgaria", "Finnland", "Ireland"};
-
-	cout << "So let's see the options: ";
-	cout << "1. Bulgaria 2. Finnland 3. Ireland\n";
 	
 	while (true)
 	{
+		cout << "\nWell, here you are, " << Player.name << "! We've been waiting for you!\n";
+		cout << "Your job is to travel across 5 countries in Europe and explore the awesome world outside your own country.\n";
+		cout << "First things first, you must choose your starting country!\n\n";
+		cout << "So let's see the options: ";
+		cout << "1. Bulgaria 2. Finnland 3. Ireland\n";
 		cout << "Your choice: ";
+
 		cin >> countryChoice;
 
 		if (countryChoice >= '1' && countryChoice <= '3')
 		{
+			system("cls");
 			if (countryChoice == '1')
 			{
+
 				cout << "Your choice: " << countryList[0] << endl;
 				cout << "Ahh, you chose our own country, we're pleased\n";
 			}
@@ -77,40 +80,23 @@ void MainStory()
 		}
 		else
 		{
-			mistakeCounter++;
-			if (mistakeCounter == 5)
-			{
-				cout << "You've made "<< mistakeCounter << " mistakes so far....Please don't do it again!\n\n";
-			}
-			if (mistakeCounter == 10)
-			{
-				cout << "You've done this " << mistakeCounter << " times so far....Last warning!\n\n";
-			}
-			if (mistakeCounter == 15)
-			{
-				cout << "\nWe've warned you and you didn't listen!\n";
-				cout << "You've done this " << mistakeCounter << " times already!....That's it! You are done!\n\n";
-				cout << "Game shutting down....";
-				Sleep(2500);
-				exit(0);
-			}
-			
-			cout << "What did you do wrong?\n\n";
+			cout << "\nWhat did you do wrong?\n\n";
 			cout << "Please try again!\n";
+			system("pause");
+			system("cls");
 		}
 	}
-	Sleep(3000);
-
-
+	//Sleep(3000);
 }
+
 void gameStart()
 {
 	cout << "game";
 }
+
 void gameSetup()
 {
-	inputPassport();
+	//inputPassport();
 	MainStory();
-	showPassport();
 	gameStart();
 }

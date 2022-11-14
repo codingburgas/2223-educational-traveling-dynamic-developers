@@ -1,13 +1,9 @@
-#pragma once
-#include <iostream>
-#include <Windows.h>
-
-using namespace std;
+#pragma once 
 		
-		void MainMenu();
-		void Play();
-		void Help();
-		void Exit();
-		void MainStory();
-		void gameSetup();
-		void gameStart();
+void MainMenu();
+void Play();
+void Help();
+void Exit();
+void MainStory();
+void gameSetup();
+void gameStart();

@@ -1,15 +1,12 @@
+#include "Precompile.h"
 #include "PlayOption.h"
-
-
-using namespace std;
-
 
 void MainMenu()
 {
 
 	string playerChoice;
 
-incorrect:
+	incorrect:			//return to beginning of function
 
 	cout << "Welcome to Euro Traveller - The Mini Game!\n\n\n";
 	cout << "1. Play\n";
@@ -19,6 +16,7 @@ incorrect:
 
 	cout << "\nUser Input: ";
 	cin >> playerChoice;
+
 	if (playerChoice == "1")
 	{
 		Play();
@@ -55,6 +53,7 @@ void Help()
 	system("cls");
 	char playerChoiceHelpSection;
 incorrectInputHelp:
+	
 	cout << "You chose the help section!\n";
 	cout << "During gameplay you can use this command (some may be added in the future and may be added here aswell)! :D\n\n";
 	cout << "Here's the command list:\n";
@@ -116,7 +115,10 @@ incorrectInputHelp:
 void Exit()
 {
 	char finalChoice;
-	cout << "\nAre you sure you want to exit?\n";
+
+	incorrectExit:
+
+	cout << "Are you sure you want to exit?\n";
 	cout << "Type n to cancel || y to exit\n";
 	
 	cin >> finalChoice; 
@@ -139,33 +141,10 @@ void Exit()
 	default:
 		cout << "Incorrect Input! Please try again!\n";
 		
-		int issueCounter = 1;
+		system("pause");
+		system("cls");
 		
-		do {
-			cin >> finalChoice;
-
-			if (finalChoice == 'y')
-			{
-				cout << "Finally, you made a decision!\nHave a nice day! Program closing....";
-				Sleep(2800);
-				exit(0);
-			}
-			else if(finalChoice == 'n')
-			{
-				cout << "Oh, so you don't want to quit? Oh well, back to menu....";
-				Sleep(3200);
-				system("cls");
-				MainMenu();
-				break;
-			}
-			else
-			{
-				issueCounter++;
-				cout << "Try again!\n";
-				cout << "You've tried: " << issueCounter << " times so far!\n";
-			}
-		} while (true);
-
+		goto incorrectExit;	
 		break;
 	}
 }

@@ -1,7 +1,5 @@
-#include <iostream>
+#include "Precompile.h"
 #include "PlayOption.h"
-
-using namespace std;
 
 int main()
 {

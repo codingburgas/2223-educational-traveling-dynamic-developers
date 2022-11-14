@@ -127,11 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClosingStage.cpp" />
     <ClCompile Include="Dynamic Developers.cpp" />
     <ClCompile Include="PlayOption.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Finnland.cpp" />
+    <ClCompile Include="Bulgaria.cpp" />
+    <ClCompile Include="Ireland.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bulgaria.h" />
+    <ClInclude Include="Finnland.h" />
+    <ClInclude Include="Ireland.h" />
+    <ClInclude Include="Precompile.h" />
     <ClInclude Include="PlayOption.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,10 +2,47 @@
 #include "PlayOption.h"
 
 using namespace std;
+struct passport
+{
+	string name;
+	string surname;
+	string age;
+	string country;
+	string city;
+	string countriesVisited[50];
+}Player;
+void inputPassport()
+{
+	cout << "Please make your passport \n";
+	cout << "Name: ";
+	cin >> Player.name;
+	cout << "Surname: ";
+	cin >> Player.surname;
+	cout << "age: ";
+	cin >> Player.age;
+	cout << "Country: ";
+	cin >> Player.country;
+	cout << "City: ";
+	cin >> Player.city;
 
+}
+void showPassport()
+{
+
+	cout << "Name: ";
+	cout << Player.name << endl;
+	cout << "Surname: ";
+	cout << Player.surname << endl;
+	cout << "age: ";
+	cout << Player.age << endl;
+	cout << "Country: ";
+	cout << Player.country << endl;
+	cout << "City: ";
+	cout << Player.city << endl;
+}
 void MainStory()
 {
-	cout << "Well, here you are, traveller! We've been waiting for you!\n";
+	cout << "Well, here you are, " << Player.name << "! We've been waiting for you!\n";
 	cout << "Your job is to travel across 5 countries in Europe and explore the awesome world outside your own country.\n";
 	cout << "First things first, you must choose your starting country!\n\n";
 	
@@ -73,6 +110,8 @@ void gameStart()
 }
 void gameSetup()
 {
+	inputPassport();
 	MainStory();
+	showPassport();
 	gameStart();
 }

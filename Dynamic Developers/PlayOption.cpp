@@ -16,6 +16,7 @@ void MainMenu()
 
 
 	cout << "\nUser Input: ";
+
 	cin >> playerChoice;
 	if (playerChoice == 1)
 	{
@@ -43,7 +44,63 @@ void Play()
 
 void Help()
 {
+	system("cls");
+	char playerChoiceHelpSection;
+
 	cout << "You chose the help section!\n";
+	cout << "During gameplay you can use this command (some may be added in the future and may be added here aswell)! :D\n\n";
+	cout << "Here's the command list:\n";
+	cout << "/exit - You instantly close the game\n";
+	cout << "Note: This command CANNOT be used in main menu nor in the help section!\n";
+
+	cout << "\nWhere do you want to go next?\n";
+	cout << "1. Main menu\n";
+	cout << "2. Exit\n\n";
+	cout << "User Input: ";
+	
+	cin >> playerChoiceHelpSection;
+
+	switch (playerChoiceHelpSection)
+	{
+	case '1':
+		cout << "\n\nBack to main menu...";
+		Sleep(2400);
+		system("cls");
+		MainMenu();
+		break;
+	case '2':
+		char confirmChoice;
+		cout << "You want to quit already?\n\n";
+		cout << "Type n to cancel || y to exit game\n";
+		
+		cout << "User Input: ";
+		while (true)
+		{
+			cin >> confirmChoice;
+			if (confirmChoice == 'n')
+			{
+				Help();
+				break;
+			}
+			else if (confirmChoice == 'y')
+			{
+				cout << "Quiting game...";
+				Sleep(2000);
+				exit(0);
+			}
+			else
+			{
+				cout << "Incorrect Input!" << endl << "Please try again!\n";
+			}
+		}
+
+		break;
+	default:
+		/// <summary>
+		// NEED TO BE FIXED
+		/// </summary>
+		break;
+	}
 }
 
 void Exit()
@@ -64,7 +121,7 @@ void Exit()
 
 	case 'n':
 		cout << "You want to continue? Sure thing....back to main menu";
-		
+		Sleep(3000);
 		system("cls");
 		MainMenu();
 

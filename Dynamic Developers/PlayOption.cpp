@@ -9,6 +9,8 @@ void MainMenu()
 
 	int playerChoice;
 
+incorrect:
+
 	cout << "Welcome to Euro Traveller - The Mini Game!\n\n\n";
 	cout << "1. Play\n";
 	cout << "2. Help\n";
@@ -29,6 +31,13 @@ void MainMenu()
 	else if (playerChoice == 3)
 	{
 		Exit();
+	}
+	else
+	{
+		cout << "Incorrect Input! "  << "Please try again!\n";
+		system("pause");
+		system("cls");
+		goto incorrect;
 	}
 }
 

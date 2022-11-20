@@ -1,5 +1,6 @@
 #include "Precompile.h"
 #include "PlayOption.h"
+#include "Bulgaria.h"
 
 struct passport
 {
@@ -44,6 +45,8 @@ void showPassport()
 void MainStory()
 {
 	char countryChoice; unsigned short int mistakeCounter = 0; string countryList[3] = {"Bulgaria", "Finnland", "Ireland"};
+
+	Burgas();
 	
 	while (true)
 	{
@@ -64,6 +67,8 @@ void MainStory()
 
 				cout << "Your choice: " << countryList[0] << endl;
 				cout << "Ahh, you chose our own country, we're pleased\n";
+				system("Pause");
+				
 			}
 			else if (countryChoice == '2')
 			{
@@ -89,14 +94,10 @@ void MainStory()
 	//Sleep(3000);
 }
 
-void gameStart()
-{
-	cout << "game";
-}
+
 
 void gameSetup()
 {
-	//inputPassport();
+	inputPassport();
 	MainStory();
-	gameStart();
 }

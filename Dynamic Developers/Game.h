@@ -8,4 +8,6 @@ void Exit();
 void MainStory();
 void gameSetup();
 void Burgas();
-void Sofia();
+void Dublin();
+void Cork();
+void Ireland();

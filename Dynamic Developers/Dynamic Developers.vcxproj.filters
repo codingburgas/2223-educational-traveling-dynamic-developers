@@ -44,14 +44,5 @@
     <ClInclude Include="Precompile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Bulgaria.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Finnland.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ireland.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

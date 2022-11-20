@@ -69,7 +69,6 @@ void MainStory()
 				system("cls");
 
 				Burgas(); //Start Money = 1000//
-				Sofia();
 			}
 			else if (countryChoice == '2')
 			{

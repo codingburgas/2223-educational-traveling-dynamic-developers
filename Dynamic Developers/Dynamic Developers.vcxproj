@@ -136,9 +136,6 @@
     <ClCompile Include="Ireland.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bulgaria.h" />
-    <ClInclude Include="Finnland.h" />
-    <ClInclude Include="Ireland.h" />
     <ClInclude Include="Precompile.h" />
     <ClInclude Include="Game.h" />
   </ItemGroup>

@@ -58,6 +58,7 @@ void MainStory()
 
 		if (countryChoice >= '1' && countryChoice <= '3')
 		{
+			
 			system("cls");
 			if (countryChoice == '1')
 			{
@@ -67,7 +68,8 @@ void MainStory()
 				system("Pause");
 				system("cls");
 
-				Burgas();
+				Burgas(); //Start Money = 1000//
+				Sofia();
 			}
 			else if (countryChoice == '2')
 			{

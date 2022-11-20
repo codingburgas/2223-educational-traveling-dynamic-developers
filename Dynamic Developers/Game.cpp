@@ -1,6 +1,6 @@
 #include "Precompile.h"
-#include "PlayOption.h"
-#include "Bulgaria.h"
+#include "Game.h"
+
 
 struct passport
 {

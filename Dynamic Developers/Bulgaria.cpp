@@ -1,5 +1,5 @@
 #include "Precompile.h"
-#include "Bulgaria.h"
+#include "Game.h"
 
 void Burgas()
 {

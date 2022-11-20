@@ -140,7 +140,7 @@
     <ClInclude Include="Finnland.h" />
     <ClInclude Include="Ireland.h" />
     <ClInclude Include="Precompile.h" />
-    <ClInclude Include="PlayOption.h" />
+    <ClInclude Include="Game.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

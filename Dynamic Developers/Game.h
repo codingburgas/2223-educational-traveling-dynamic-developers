@@ -1,5 +1,5 @@
 #pragma once 
-#include "Bulgaria.h"
+
 		
 void MainMenu();
 void Play();
@@ -7,3 +7,5 @@ void Help();
 void Exit();
 void MainStory();
 void gameSetup();
+void Burgas();
+void Sofia();

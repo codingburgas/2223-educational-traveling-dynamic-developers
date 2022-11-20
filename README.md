@@ -25,22 +25,6 @@
   
 ## 📄 Documents
       
-  <img src="https://user-images.githubusercontent.com/75934947/166557467-b0db5298-0c01-4201-aad8-69f17a7104dd.png" width="20px" height="20px"/> [Project Documentation]()
+  <img src="https://user-images.githubusercontent.com/75934947/166557467-b0db5298-0c01-4201-aad8-69f17a7104dd.png" width="20px" height="20px"/> [Project Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/prpenchev20_codingburgas_bg/ERtZvo4jucFEmm-bKOpQSVIBKE7pzdrmZOc7t-rQMXEo6g?e=bXUwBK)
   
-  <img src="https://user-images.githubusercontent.com/75934947/166558395-c1113581-36d0-4c2d-9c51-e1c4f7a32eb7.png" width="20px" height="20px"/> [Presentation]()
-    
- <img src="https://user-images.githubusercontent.com/75934947/166557467-b0db5298-0c01-4201-aad8-69f17a7104dd.png" width="20px" height="20px"/> [QA Documentation]()
-  
-    
-## 📋 Description:
-    
-
-
-  
-
-## ⚙ Installation
-```
-You can download our project  by pasting the following code in your CMD:
-```
-    
-
+  <img src="https://user-images.githubusercontent.com/75934947/166558395-c1113581-36d0-4c2d-9c51-e1c4f7a32eb7.png" width="20px" height="20px"/> [Presentation](https://codingburgas-my.sharepoint.com/:p:/g/personal/prpenchev20_codingburgas_bg/EXvHSEh3u_hChp0tSmq8nZMBUpsl7dYYI0Z838ajoZGVnw?e=rSsvqp)

@@ -3,12 +3,12 @@
 
 void Burgas()
 {
-    cout << "Welcome to Burgas" << endl;
+    cout << "Welcome to Burgas!" << endl;
 
     cout << "Current location: South bus station" << endl;
 
     cout << "Your current money is: 1000 BGN" << endl;
-    cout << "First Mission Find a Way to get out of Burgas" << endl;
+    cout << "First Mission Find a Way to get out of Burgas!" << endl;
 
     cout << endl;
 
@@ -16,7 +16,7 @@ void Burgas()
 
     string choice;
 
-    getline(cin, choice);
+    cin >> choice;
 
     system("CLS");
 
@@ -29,7 +29,7 @@ void Burgas()
         cout << "Choice: Take The Bus (will cost you 30 BGN but will take you a day)" << endl;
         cout << "Choice: Take The Train (will cost you 50 BGN but will take you 6 hours)" << endl;
 
-        getline(cin, choice);
+        cin >> choice;
 
         if (choice == "Bus")
         {
@@ -53,7 +53,7 @@ void Burgas()
     {
         cout << "You have been exploring for 3 hours and found people that are going to take you to Sofia for 20 BGN but in 3 days" << endl;
         cout << "Accept because this is your only way out of Burgas: Yes" << endl;
-        getline(cin, choice);
+        cin >> choice;
         days = 3;
         
 
@@ -64,7 +64,7 @@ void Burgas()
             cout << "Your current money is: 980 BGN" << endl;
             cout << "New Mission: Find a place to stay for the next 3 days" << endl;
             cout << "Tip: Ask The people that you are going to be traveling with (Type: Ask)" << endl;
-            getline(cin, choice);
+            cin >> choice;
 
             system("CLS");
 
@@ -108,14 +108,9 @@ void Burgas()
                             cout << "Your current money is: 1220 BGN" << endl;
                             
                         }
-
                     }
                 }
-
             }
-
         }
-
-
     }
 }

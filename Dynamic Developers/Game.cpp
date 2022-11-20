@@ -25,7 +25,6 @@ void inputPassport()
 	cin >> Player.country;
 	cout << "City: ";
 	cin >> Player.city;
-
 }
 
 void showPassport()
@@ -45,13 +44,11 @@ void showPassport()
 void MainStory()
 {
 	char countryChoice; unsigned short int mistakeCounter = 0; string countryList[3] = {"Bulgaria", "Finnland", "Ireland"};
-
-	Burgas();
 	
 	while (true)
 	{
-		cout << "\nWell, here you are, " << Player.name << "! We've been waiting for you!\n";
-		cout << "Your job is to travel across 5 countries in Europe and explore the awesome world outside your own country.\n";
+		cout << "Well, here you are, " << Player.name << "! We've been waiting for you!\n";
+		cout << "Your job is to travel across these 3 countries in Europe and explore the awesome world outside your own country!\n";
 		cout << "First things first, you must choose your starting country!\n\n";
 		cout << "So let's see the options: ";
 		cout << "1. Bulgaria 2. Finnland 3. Ireland\n";
@@ -64,11 +61,13 @@ void MainStory()
 			system("cls");
 			if (countryChoice == '1')
 			{
-
 				cout << "Your choice: " << countryList[0] << endl;
-				cout << "Ahh, you chose our own country, we're pleased\n";
+				cout << "Ahh, you chose our own country, we're pleased!\n";
+
 				system("Pause");
-				
+				system("cls");
+
+				Burgas();
 			}
 			else if (countryChoice == '2')
 			{
@@ -98,6 +97,6 @@ void MainStory()
 
 void gameSetup()
 {
-	inputPassport();
+	//inputPassport();
 	MainStory();
 }

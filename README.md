@@ -1,7 +1,7 @@
 <h1 align="center">Dynamic Developers</h1>
 <br>
 <p align="center">
-<img src="" width="500px">
+<img src="logo.png" width="500px">
 </p>
 
 

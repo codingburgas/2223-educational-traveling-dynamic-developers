@@ -58,7 +58,7 @@ incorrectInputHelp:
 	cout << "During gameplay you can use this command (some may be added in the future and may be added here aswell)! :D\n\n";
 	cout << "Here's the command list:\n";
 	cout << "/exit - You instantly close the game\n";
-	cout << "Note: This command CANNOT be used in main menu nor in the help section!\n";
+	cout << "Note: This command CANNOT be used at the current stage of development!\n";
 
 	cout << "\nWhere do you want to go next?\n";
 	cout << "1. Main menu\n";
@@ -99,6 +99,9 @@ incorrectInputHelp:
 			else
 			{
 				cout << "Incorrect Input!" << endl << "Please try again!\n";
+				system("pause");
+				system("cls");
+				goto incorrectInputHelp;
 			}
 		}
 
@@ -144,7 +147,7 @@ void Exit()
 		system("pause");
 		system("cls");
 		
-		goto incorrectExit;	
+		goto incorrectExit;
 		break;
 	}
 }

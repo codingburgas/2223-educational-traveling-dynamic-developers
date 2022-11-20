@@ -11,23 +11,23 @@ void Cork()
 	cout << "2. Go by the train\n";
 	cout << "3. Explore the city and find somebody to take you there.\n";
 	cin >> choice;
+	system("cls");
 	if (choice == 1)
 	{
 		incorrectInput1:
 		cout << "You missed the bus! What are you going to do now:\n";
 		cout << "1. Wait for the next bus\n";
-		cout << "2. Go with the  train\n";
+		cout << "2. Go with the train\n";
 		cin >> choice;
+		system("cls");
 		if (choice == 1)
 		{
 			cout << "You slept in the bus station for 8 hours and took your next bus.\n";
 			cout << "Welcome to Dublin! Your journey ends here.\n";
 		}
-		else if(choice == 2)
+		else if (choice == 2)
 		{
 			goto choice2;
-			
-			
 		}
 		else
 		{
@@ -42,8 +42,9 @@ void Cork()
 	choice2:
 		cout << "You entered the train station. Chose wich train to take.\n";
 		cout << "1. Fast train(Leaves in 20 minutes)\n";
-		cout << "2. Take the luxary train(Leaves in 2 hours)\n";
+		cout << "2. Take the luxury train(Leaves in 2 hours)\n";
 		cin >> choice;
+		system("cls");
 		if (choice == 1)
 		{
 			cout << "You arrived after 3 hours and end your journey.\n";
@@ -51,7 +52,6 @@ void Cork()
 		else if (choice == 2)
 		{
 			cout << "You arrived after 6 hours. You enjoyed the beautiful views of ireland and left the country satisfied.\n";
-
 		}
 		else
 		{
@@ -67,14 +67,15 @@ void Cork()
 	{
 	incorrectInput3:
 		cout << "When you were walking down the city centre you saw a group of friends who were wearing merch from your favourite rock band. You decided to talk to them and they told you that they are going to Dublin.\n";
-		cout << "What a coincidence!You told them that you are going to dublin too!.\n";
-		cout << "They offered to take you with them. Do you accept";
-		cout << "!. Accpet\n 2. Refuse";
+		cout << "What a coincidence! You told them that you are going to Dublin too!\n";
+		cout << "They offered to take you with them. Do you accept?\n";
+		cout << "1. Accept\n 2. Refuse";
 		cin >> choice;
+		system("cls");
 		if (choice == 1)
 		{
 			cout << "You accepted the offer and joined them on their trip to Dublin. The whole trip was fun and you ejoyed every seccond of it.\n";
-			cout << "They left you at the airpord and said goodbye. You took the next fly to home and ended your journey!.\n";
+			cout << "They left you at the airport and said goodbye. You took the next flight to home and ended your journey!.\n";
 		}
 		else if (choice == 2)
 		{
@@ -83,6 +84,7 @@ void Cork()
 			cout << "1. Take the bus";
 			cout << "2. Go by the train";
 			cin >> choice;
+			system("cls");
 			if (choice == 1)
 			{
 				goto incorrectInput1;

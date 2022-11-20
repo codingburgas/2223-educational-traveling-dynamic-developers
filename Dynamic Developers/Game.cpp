@@ -1,8 +1,7 @@
 #include "Precompile.h"
 #include "Game.h"
 
-
-struct passport
+/*struct passport
 {
 	string name;
 	string surname;
@@ -39,49 +38,40 @@ void showPassport()
 	cout << Player.country << endl;
 	cout << "City: ";
 	cout << Player.city << endl;
-}
+}*/
 
 void MainStory()
 {
-	char countryChoice; unsigned short int mistakeCounter = 0; string countryList[3] = {"Bulgaria", "Finnland", "Ireland"};
+	char countryChoice;
 	
 	while (true)
 	{
-		cout << "Well, here you are, " << Player.name << "! We've been waiting for you!\n";
+		cout << "Well, here you are, traveller! We've been waiting for you!\n";
 		cout << "Your job is to travel across these 3 countries in Europe and explore the awesome world outside your own country!\n";
-		cout << "First things first, you must choose your starting country!\n\n";
-		cout << "So let's see the options: ";
-		cout << "1. Bulgaria 2. Finnland 3. Ireland\n";
+		cout << "First things first, are you ready to begin your journey?\n\n";
+		cout << "Type n to cancel || type y to continue\n\n";
+		cout << "Note: If you cancel you'll go back to the main menu!\n\n";
 		cout << "Your choice: ";
 
 		cin >> countryChoice;
 
-		if (countryChoice >= '1' && countryChoice <= '3')
+		if (countryChoice == 'n' || countryChoice == 'y')
 		{
-			
-			system("cls");
-			if (countryChoice == '1')
+			if (countryChoice == 'y')
 			{
-				cout << "Your choice: " << countryList[0] << endl;
-				cout << "Ahh, you chose our own country, we're pleased!\n";
+				cout << "So you are ready? Let's go!\n";
 
 				system("Pause");
 				system("cls");
-
-				Burgas(); //Start Money = 1000//
-			}
-			else if (countryChoice == '2')
-			{
-				cout << "Your choice: " << countryList[1] << endl;
-				cout << "Ahh, you chose the country of sisu and kilju.....What a surprise...\n";
-				cout << "Oh, I mean good choice! :D\n";
+				break;
 			}
 			else
 			{
-				cout << "Your choice: " << countryList[2] << endl;
-				cout << "Not the best choice but nevertheless you are not going to regret your decision!:D\n";
+				cout << "You canceled! Back to main menu!\n";
+				system("Pause");
+				system("cls");
+				MainMenu();
 			}
-			break;
 		}
 		else
 		{
@@ -94,10 +84,16 @@ void MainStory()
 	//Sleep(3000);
 }
 
-
-
 void gameSetup()
 {
 	//inputPassport();
 	MainStory();
+	Bulgaria();
+	Finland();
+	Ireland();
+	cout << "Thank you for playing!\n";
+	cout << "It was a pleasure!\n";
+	cout << "Greatings from Dynamic Developers!\n";
+	cout << "Game is closing....";
+	exit(0);
 }

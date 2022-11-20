@@ -27,7 +27,7 @@
     <ClCompile Include="Bulgaria.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Finnland.cpp">
+    <ClCompile Include="Finland.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Ireland.cpp">

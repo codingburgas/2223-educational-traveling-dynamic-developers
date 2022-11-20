@@ -131,7 +131,7 @@
     <ClCompile Include="Dynamic Developers.cpp" />
     <ClCompile Include="PlayOption.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Finnland.cpp" />
+    <ClCompile Include="Finland.cpp" />
     <ClCompile Include="Bulgaria.cpp" />
     <ClCompile Include="Ireland.cpp" />
   </ItemGroup>

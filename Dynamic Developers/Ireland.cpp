@@ -10,14 +10,20 @@ void Cork()
 	cout << "1. Go to the bus station and take the bus to Dublin\n";
 	cout << "2. Go by the train\n";
 	cout << "3. Explore the city and find somebody to take you there.\n";
+
+	cout << "User Input: ";
 	cin >> choice;
+
 	system("cls");
+
 	if (choice == 1)
 	{
 		incorrectInput1:
 		cout << "You missed the bus! What are you going to do now:\n";
 		cout << "1. Wait for the next bus\n";
 		cout << "2. Go with the train\n";
+
+		cout << "User Input: ";
 		cin >> choice;
 		system("cls");
 		if (choice == 1)
@@ -41,9 +47,12 @@ void Cork()
 	{
 	choice2:
 		cout << "You entered the train station. Chose wich train to take.\n";
-		cout << "1. Fast train(Leaves in 20 minutes)\n";
-		cout << "2. Take the luxury train(Leaves in 2 hours)\n";
+		cout << "1. Fast train (Leaves in 20 minutes)\n";
+		cout << "2. Take the luxury train (Leaves in 2 hours)\n";
+
+		cout << "User Input: ";
 		cin >> choice;
+
 		system("cls");
 		if (choice == 1)
 		{
@@ -69,7 +78,9 @@ void Cork()
 		cout << "When you were walking down the city centre you saw a group of friends who were wearing merch from your favourite rock band. You decided to talk to them and they told you that they are going to Dublin.\n";
 		cout << "What a coincidence! You told them that you are going to Dublin too!\n";
 		cout << "They offered to take you with them. Do you accept?\n";
-		cout << "1. Accept\n 2. Refuse";
+		cout << "1. Accept\n2. Refuse\n";
+
+		cout << "User Input: ";
 		cin >> choice;
 		system("cls");
 		if (choice == 1)
@@ -81,8 +92,10 @@ void Cork()
 		{
 		incorrectInput4:
 			cout << "You refused their offer and need to make a decision:\n";
-			cout << "1. Take the bus";
-			cout << "2. Go by the train";
+			cout << "1. Take the bus\n";
+			cout << "2. Go by the train\n";
+
+			cout << "User Input: ";
 			cin >> choice;
 			system("cls");
 			if (choice == 1)
@@ -116,6 +129,7 @@ void Cork()
 		system("cls");
 		goto incorrectInput;
 	}
+	system("cls");
 }
 
 void Ireland()

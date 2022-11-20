@@ -14,3 +14,4 @@ void Tampere();
 void Helsinki();
 void Cork();
 void Ireland();
+void EndCredits();
